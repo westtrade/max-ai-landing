@@ -1,17 +1,9 @@
 @import 'tailwindcss';
 
 @theme {
-	--color-primary: 63.7% 0.237 251.331;
-	--color-secondary: 54.6% 0.245 276.881;
-	--color-accent: 58.5% 0.233 306.117;
-	--color-background: 99.6% 0.002 247.839;
-	--color-light: 70.7% 0.22 232.325;
-}
-
-:root {
-	--primary: 63.7% 0.237 251.331;
-	--secondary: 54.6% 0.245 276.881;
-	--accent: 58.5% 0.233 306.117;
-	--background: 99.6% 0.002 247.839;
-	--light: 70.7% 0.22 232.325;
+	--color-primary: #3384fd;
+	--color-secondary: #5b43f0;
+	--color-accent: #8b36da;
+	--color-background: #fffeff;
+	--color-light: #3fa7f5;
 }

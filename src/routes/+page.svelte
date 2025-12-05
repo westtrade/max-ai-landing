@@ -12,27 +12,28 @@
 	import MousePointerClickIcon from '@lucide/svelte/icons/mouse-pointer-click';
 	import ListFilterIcon from '@lucide/svelte/icons/list-filter';
 	import MessageSquareIcon from '@lucide/svelte/icons/message-square';
+
+	import logoSrc from '$lib/assets/android-chrome-192x192.png';
+	
+	const botId = 'id482613900020_bot';
 </script>
 
 <!-- Hero -->
 <header class="px-4 pt-8 pb-12 text-center">
-	<div class="mb-6 inline-block p-3 bg-linear-to-br from-primary/10 to-secondary/10 rounded-2xl">
-		<div
-			class="size-20 bg-linear-to-br from-primary to-secondary rounded-xl flex items-center justify-center"
-		>
-			<BotIcon class="text-background size-10" />
-		</div>
+	<div class="mb-6 inline-block p-3 rounded-2xl">
+		<img class="size-48" src={logoSrc} />
 	</div>
-	<h1 class="text-3xl md:text-4xl font-bold max-w-lg mx-auto mb-4">
+
+	<h1 class="text-4xl md:text-6xl font-bold mx-auto mb-4 px-4">
 		<span class="text-primary">350+</span> ИИ-моделей — в одном боте
 	</h1>
-	<p class="text-gray-600 max-w-md mx-auto mb-8">
+	<p class="text-gray-600 max-w-md mx-auto mb-10">
 		ChatGPT, Gemini, Claude, GigaChat и другие — прямо в Max. Без регистрации на сайтах.
 	</p>
 	<a
-		href="https://max.ru/id482613900020_bot"
+		href={`https://max.ru/${botId}`}
 		target="_blank"
-		class="bg-primary hover:bg-secondary active:bg-accent text-background font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-200 text-lg w-full max-w-xs mx-auto flex items-center justify-center gap-2"
+		class="bg-primary hover:bg-secondary active:bg-accent text-background font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-200 text-2xl w-full max-w-xs mx-auto flex items-center justify-center gap-2"
 	>
 		<PlusIcon class="size-5" />
 		Добавить в Max
@@ -42,7 +43,7 @@
 <!-- Models -->
 <section class="px-4 pb-12">
 	<h2 class="text-2xl font-bold text-center mb-8">Подключено</h2>
-	<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 max-w-4xl mx-auto">
+	<div class="flex items-center justify-center  gap-2 max-w-4xl mx-auto">
 		<div class="bg-gray-50 rounded-xl p-4 flex flex-col items-center">
 			<div class="size-12 rounded-xl bg-primary/10 flex items-center justify-center mb-2">
 				<MessageCircleIcon class="text-primary size-6" />
@@ -97,11 +98,11 @@
 <!-- Steps -->
 <section class="bg-gray-50 py-12 px-4">
 	<div class="max-w-4xl mx-auto">
-		<h2 class="text-2xl font-bold text-center mb-10">Как это работает</h2>
+		<h2 class="text-4xl font-bold text-center mb-10">Как это работает</h2>
 		<div class="space-y-6">
 			<div class="flex items-start">
 				<div
-					class="flex-shrink-0 size-10 rounded-full bg-primary flex items-center justify-center text-background font-bold mr-4 mt-0.5"
+					class="shrink-0 size-10 rounded-full bg-primary flex items-center justify-center text-background font-bold mr-4 mt-0.5"
 				>
 					<MousePointerClickIcon class="size-5" />
 				</div>
@@ -109,14 +110,14 @@
 					<h3 class="font-semibold text-lg mb-1">Найдите бота</h3>
 					<p class="text-gray-600">
 						В поиске Max: <code class="bg-gray-200 px-1.5 py-0.5 rounded text-xs"
-							>@id482613900020_bot</code
+							>@{botId}</code
 						>
 					</p>
 				</div>
 			</div>
 			<div class="flex items-start">
 				<div
-					class="flex-shrink-0 size-10 rounded-full bg-secondary flex items-center justify-center text-background font-bold mr-4 mt-0.5"
+					class="shrink-0 size-10 rounded-full bg-secondary flex items-center justify-center text-background font-bold mr-4 mt-0.5"
 				>
 					<ListFilterIcon class="size-5" />
 				</div>
@@ -129,7 +130,7 @@
 			</div>
 			<div class="flex items-start">
 				<div
-					class="flex-shrink-0 size-10 rounded-full bg-accent flex items-center justify-center text-background font-bold mr-4 mt-0.5"
+					class="shrink-0 size-10 rounded-full bg-accent flex items-center justify-center text-background font-bold mr-4 mt-0.5"
 				>
 					<MessageSquareIcon class="size-5" />
 				</div>
@@ -144,14 +145,14 @@
 
 <!-- Final CTA -->
 <section class="px-4 py-12 text-center">
-	<h2 class="text-2xl font-bold mb-4">Прямо сейчас — бесплатно</h2>
+	<h2 class="text-4xl font-bold mb-8">Прямо сейчас — бесплатно</h2>
 	<p class="text-gray-600 max-w-md mx-auto mb-6">
 		Нет карты? Нет проблем. Достаточно аккаунта в Max.
 	</p>
 	<a
-		href="https://max.ru/id482613900020_bot"
+		href={`https://max.ru/${botId}`}
 		target="_blank"
-		class="inline-block bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-accent text-background font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 text-lg w-full max-w-xs mx-auto flex items-center justify-center gap-2"
+		class="bg-linear-to-r from-primary to-secondary hover:from-secondary hover:to-accent text-background font-semibold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 text-lg w-full max-w-xs mx-auto flex items-center justify-center gap-2"
 	>
 		<BotIcon class="size-5" />
 		Открыть бота
